@@ -1,0 +1,294 @@
+http://ww38.qfind.net/?_inv&subid1=20240315-1625-54fd-982a-4f98c05e2878
+
+
+http://www1.1111sale.us/?tm=1&subid4=1710479515.0133400000&KW1=Customer%20Support%20Help%20Desk%20Software&KW2=Customer%20Service%20Call%20Center&KW3=Live%20Chat%20Answering%20Service&searchbox=0&domainname=0&backfill=0
+
+http://ww25.101nitro.com/?subid1=20240315-1602-48cc-8701-0983724a1428
+
+IPURL 
+
+The provided JavaScript function isIPInURL() checks if there is an IP address present in the current URL.
+
+Here's a breakdown of how it works:
+
+var reg = /\d{1,3}[\.]{1}\d{1,3}[\.]{1}\d{1,3}[\.]{1}\d{1,3}/;: This line defines a regular expression (reg) to match IP addresses. The regular expression \d{1,3}[\.]{1}\d{1,3}[\.]{1}\d{1,3}[\.]{1}\d{1,3} matches four sets of one to three digits separated by periods.
+
+var url = window.location.href: This line retrieves the current URL and stores it in the variable url.
+
+if(reg.exec(url) == null) { ... }: This line uses the exec() method of the regular expression object (reg) to search for matches in the url. If no match is found (i.e., the URL does not contain an IP address), it logs "NP" to the console and returns -1.
+
+else { ... }: If a match is found (i.e., the URL contains an IP address), it logs "P" to the console and returns 1.
+
+So, if you call isIPInURL() in your code, it will return 1 if there is an IP address in the URL, -1 if there isn't, and it will log the corresponding message to the console
+
+EXAMPLE;
+https://example.com/page?param=value&ip=192.168.0.1
+
+https://192.168.1.1/page?param=value ----------------------------------------------------- no response
+
+https://example.com/page?param=value&ip=192.168.0.1&malicious=evil.com
+
+LONGURL;
+
+To identify a potentially malicious URL using the isLongURL() function, you can follow these steps:
+
+Observe URL Length: The isLongURL() function categorizes URLs into three groups based on their length:
+
+URLs shorter than 54 characters are considered not potentially malicious (NP).
+URLs between 54 and 75 characters are considered potentially suspicious (Maybe).
+URLs longer than 75 characters are considered potentially malicious (P).
+Execute the Function: Use the isLongURL() function in your JavaScript code to evaluate the URL of interest.
+
+Interpret the Result: Depending on the output of the isLongURL() function, you can make the following interpretations:
+
+If the function returns -1 and logs "NP" to the console, the URL is not considered potentially malicious due to its short length.
+If the function returns 0 and logs "Maybe" to the console, the URL's length falls within an ambiguous range, and further investigation may be warranted.
+If the function returns 1 and logs "P" to the console, the URL is considered potentially malicious due to its long length.
+Inspect URL Components: Additionally, you can manually inspect the components of the URL, such as the domain, path, query parameters, and any redirects, to further assess its potential risk. Look for suspicious patterns or unexpected elements, such as unfamiliar domains, encoded characters, or redirect parameters.
+
+Consider Context: Consider the context in which the URL is encountered. URLs embedded in unsolicited emails, messages, or advertisements are more likely to be malicious. Exercise caution when interacting with URLs from unknown or untrusted sources.
+
+By following these steps and leveraging the isLongURL() function, you can identify potentially malicious URLs and take appropriate precautions to protect yourself from cyber threats.
+
+
+EXAMPLE;
+
+https://example.com/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+VERY LONGER URL;
+https://example.com/abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
+
+
+LONG URL;
+
+https://example.com/abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
+
+
+TINY URL;
+
+The provided JavaScript function isTinyURL() seems to be a simple function that checks if the length of the current URL is greater than 20 characters. If it is, it logs "NP" (Not TinyURL) and returns -1; otherwise, it logs "P" (TinyURL) and returns 1.
+
+It's important to note that this function alone may not be sufficient to accurately determine if a URL is a TinyURL or not. TinyURLs are typically short, but there's no strict rule that they must be less than 20 characters. However, many TinyURLs are indeed shorter than that.
+
+Additionally, the function does not actually perform any validation to confirm if the URL corresponds to a legitimate TinyURL or not. It simply checks the length of the URL. This means it could potentially give false positives or false negatives, depending on the URLs being checked.
+
+If you're trying to determine if a URL is a TinyURL, you might want to consider using a more robust approach, such as checking against known TinyURL patterns or making requests to resolve the URL and examining the response.
+
+EXAMPLE URL;
+
+
+AlphaNumericURL;
+
+The isAlphaNumericURL() function you provided checks if the current URL contains the "@" symbol. However, this may not be the most accurate way to determine if a URL is alphanumeric, as the "@" symbol is typically not used in URLs except in specific cases like email addresses in "mailto" links.
+
+example;
+
+https://example.com/alphaNumeric123
+
+
+redirect url;
+
+
+The isRedirectingURL() function you provided seems to attempt to determine if the current URL is a redirecting URL based on whether it starts with "http://" or "https://" and contains "//" at specific positions in the URL string. However, this implementation might not cover all cases of redirecting URLs accurately.
+
+example;
+
+http://malicious-site.com/redirect?url=http://legitimate-site.com
+
+http://example.com/redirect?url=http://target-site.com
+
+customscheme://example.com/forward?to=legitimate-site.com
+
+https://example.com/go?url=https://target-site.com
+
+
+In this example, when a user accesses http://malicious-site.com/redirect?url=http://legitimate-site.com, they are redirected to http://legitimate-site.com. Malicious actors can use such URLs to disguise the destination site and potentially conduct phishing attacks or distribute malware.
+
+
+hypenurl;
+
+The isHypenURL() function aims to determine if the current URL contains a hyphen ("-") after a letter followed by a forward slash ("/"). 
+
+example;
+
+https://example.com/foo-bar
+
+https://evil-site.com/malicious-code-path
+
+https://example-site.com/product-category
+
+
+MULTIDOMAIN URL;
+
+The isMultiDomainURL() function seems to aim to determine if the current URL contains more than 4 domain segments (i.e., separated by dots).
+
+Multi-domain URL with several subdomains:
+
+
+Multi-domain URL with a country code top-level domain (ccTLD):
+
+https://subdomain.example.co.in/page
+
+Multi-domain URL with a long domain name:
+
+https://very.long.domain.name.example.org/page
+
+Multi-domain URL with a subdomain and a subdirectory:
+
+https://sub.example.com/subdirectory/page
+
+These examples demonstrate URLs with more than four domain segments, which should be classified as multi-domain URLs according to the provided function.
+
+FaviconDomainUnidentical;
+
+The isFaviconDomainUnidentical() function aims to determine if the domain of the current page's URL is different from the domain of the favicon URL. It checks if there is a favicon specified in the HTML document and then compares the domain of the page URL with the domain of the favicon URL.
+
+EXAMPLE;
+https://example.com/sample-page
+
+https://favicon-host.com/favicon.ico
+
+
+IllegalHttpsURL
+
+The isIllegalHttpsURL() function appears to check if the provided URL contains "https" after the occurrence of "//". However, its name suggests that it might be aimed at identifying potentially illegal or unauthorized HTTPS URLs.
+
+Legal HTTPS URL:
+
+https://example.com/page1
+
+Legal HTTPS URL with query parameters:
+
+https://example.com/page2?param=value
+
+Legal HTTPS URL with a subdirectory:
+
+https://example.com/subdirectory/page3
+
+Illegal HTTPS URL (not starting with "https"):
+
+http://example.com/page4
+
+Illegal HTTPS URL with a different protocol and query parameters:
+
+ftp://example.com/page5?param=value
+
+
+ImgFromDifferentDomain;
+
+The isImgFromDifferentDomain() function appears to calculate the ratio of images loaded from different domains compared to the total number of images on the webpage. Depending on this ratio, it categorizes the behavior as "NP" (unlikely), "Maybe", or "P" (probable).
+
+Here are a few more sample URLs for testing this function:
+
+Webpage with images primarily from the same domain:
+
+
+https://example.com/page1
+
+Webpage with images from a mix of domains:
+
+
+https://example.com/page2
+
+Webpage with images loaded from a single external domain:
+
+
+https://example.com/page3
+
+Webpage with only a few images from different domains:
+
+
+https://example.com/page4
+
+Webpage with images loaded from various different domains:
+
+
+https://example.com/page5
+
+
+MailToAvailable;
+
+It seems like you're trying to create a JavaScript function isMailToAvailable() to check if there are any mailto links on the page. This function checks for the presence of such links and returns either -1 if none are found or 1 if at least one is found.
+
+StatusBarTampered;
+
+In web browsers, the status bar is a horizontal area usually located at the bottom of the window. It displays information such as the URL of a hyperlink when the user hovers over it, or status messages provided by the web page or browser.
+
+When a webpage tampers with the status bar, it often involves scripting events like onmouseover or onclick associated with certain elements, such as hyperlinks (<a> tags), that modify the status bar's content or behavior. This tampering can sometimes be used maliciously to deceive users or mask the true destination of a hyperlink.
+
+The isStatusBarTampered() function you provided checks for such tampering by searching for specific attributes (onmouseover with 'window.status' and onclick with 'location.href') within anchor elements (<a> tags) on the webpage. If it finds elements with these attributes, it indicates that the status bar might be tampered with and returns a positive result. Otherwise, it returns a negative result.
+
+IframePresent;
+
+It seems you're asking for a definition based on the provided code example. In the context of the provided JavaScript function isIframePresent(), it determines whether there are any <iframe> elements present on a webpage.
+
+Here's a breakdown of the function:
+
+Name: isIframePresent()
+Functionality: Checks if there are any <iframe> elements on the webpage.
+Return values:
+-1 if no <iframe> elements are found.
+1 if one or more <iframe> elements are found.
+
+
+IdenticalDomainCount;
+
+The function getIdenticalDomainCount(tag) is designed to count the number of elements on a webpage (specified by the tag parameter) whose URL or action attribute shares the same main domain as the current webpage.
+
+Here's a breakdown of the function:
+
+Parameters: tag - Specifies the type of elements to search for ("img", "script", "form", "a", or any other HTML tag).
+Return value: The count of elements with URLs or action attributes that have the same main domain as the current webpage.
+Let's break down the function:
+
+Initialization: Initialize variables for counting identical domains and define a regular expression to extract the main domain.
+Extract Main Domain: Get the current URL (window.location.href) and extract the main domain using a regular expression.
+Query Elements: Use document.querySelectorAll(tag) to select elements based on the provided tag.
+Count Identical Domains:
+For <img> and <script> tags: Check if the src attribute shares the same main domain with the current webpage.
+For <form> tags: Check if the action attribute shares the same main domain with the current webpage.
+For <a> tags: Check if the href attribute shares the same main domain with the current webpage and ensure it's not null or empty.
+For other tags: Check if the href attribute shares the same main domain with the current webpage.
+Return: Return the count of elements with identical domains.
+
+
+https://malicious-site.com/malicious-image.jpg
+https://example.com/script1.js
+https://example.com/form-handler
+https://malicious-site.com/malicious-form-handler
+https://malicious-site.com/malicious-page.html
+
+
+
+
+
+
+
+
+AlphaNumericURL;
+
+The isAlphaNumericURL() function you provided checks if the current URL contains the "@" symbol. However, this may not be the most accurate way to determine if a URL is alphanumeric, as the "@" symbol is typically not used in URLs except in specific cases like email addresses in "mailto" links.
+
+example;
+
+https://example.com/alphaNumeric123
+
+redirect url;
+
+
+The isRedirectingURL() function you provided seems to attempt to determine if the current URL is a redirecting URL based on whether it starts with "http://" or "https://" and contains "//" at specific positions in the URL string. However, this implementation might not cover all cases of redirecting URLs accurately.
+
+example;
+
+https://google.com/redirect?url=http://target-site.com
+
+customscheme://example.com/forward?to=legitimate-site.com
+
+https://example.com/go?url=https://target-site.com
+
+http://malicious-site.com/redirect?url=http://legitimate-site.com
+
+
+
+
+
